@@ -73,7 +73,7 @@ for id_target in ids_targets:
     print(number,"-----------------------------------------Msg_automate_kaux---------------------------------------------")
     number+=1
     time.sleep(random.uniform(3.2,4.5)) #sleeping after sending a msg
-pd.DataFrame(ids_targets).to_csv("fish_query_assam12_towns_info.csv",mode='w') #saving the remaining facebook_ids
+pd.DataFrame(ids_targets).to_csv("ids.csv",mode='w') #saving the remaining facebook_ids
 
 
 
