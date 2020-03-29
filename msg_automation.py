@@ -42,7 +42,7 @@ text = "your message"
 for id_target in ids_targets:
     msg_url ='https://www.facebook.com/messages/t/' + id_target     
 
-    keyboard.add_hotkey("ctrl+alt", lambda: func1()) #calling pause_func by clicking "ctrl+alt"
+    keyboard.add_hotkey("ctrl+alt", lambda: pause_func()) #calling pause_func by clicking "ctrl+alt"
                                                      
     if pause_pt == True:   #it will break the loop 
         break 
