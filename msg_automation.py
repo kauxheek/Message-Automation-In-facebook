@@ -49,11 +49,11 @@ for id_target in ids_targets:
     try:
         driver.get(msg_url)
         driver.implicitly_wait(5)
-        msg = driver.find_element_by_css_selector('div._kmc._7kpg.navigationFocus') #finding css selector  of msg_box of class "_kmc _7kpg navigationFocus"
+        msg = driver.find_element_by_css_selector('div._kmc._7kpg.navigationFocus') #finding the element of msg_box of class "_kmc _7kpg navigationFocus"
 
         for id_logic in id_dom: #iterating over ids of the msg_box since it changes everytime / most of the time
             try:
-                msg_text = msg.find_element_by_id(id_logic) #finding the id in the msg
+                msg_text = msg.find_element_by_id(id_logic) #finding the element of the msg
                 for letters in text:
                     msg_text.send_keys(letters) #sending each letter of the target msg
                     time.sleep(random.uniform(0.1, 0.3)) #sending each letter at a time span to slow down the speed of typing
